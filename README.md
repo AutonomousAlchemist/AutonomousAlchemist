@@ -35,9 +35,11 @@
 │ MONITORING │  Failure Detection / Recovery
 └────────────┘
 </pre>
+
 <p align="center">
     <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/system_flow.svg" alt="System Data Flow Animation" width="100%">
 </p>
+
 <p style="color:#9CA3AF; font-family: monospace;">
 I think in pipelines, states, and failure modes.  
 If a system can’t fail safely, it’s not finished.
@@ -45,10 +47,12 @@ If a system can’t fail safely, it’s not finished.
 
 ---
 
-<h2 style="color:#00F7FF; font-family: monospace;">SELF-DESCRIBING SYSTEM</h2>
+
 <p align="center">
     <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/tech_radar.svg" width="100%">
 </p>
+
+<h2 style="color:#00F7FF; font-family: monospace;">SELF-DESCRIBING SYSTEM</h2>
 
 ```python
 class Engineer:
