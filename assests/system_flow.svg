@@ -6,58 +6,74 @@
     .box { fill: #0d1117; stroke: #00F7FF; stroke-width: 1.5; }
     .label { font-family: monospace; font-size: 14px; fill: #00F7FF; text-anchor: middle; font-weight: bold; }
     .sub-label { font-family: monospace; font-size: 10px; fill: #9CA3AF; text-anchor: middle; }
-    .flow-line { fill: none; stroke: #00F7FF; stroke-width: 1.5; opacity: 0.2; }
-    .feedback-line { fill: none; stroke: #00F7FF; stroke-width: 1.5; opacity: 0.2; stroke-dasharray: 4; }
+    .flow-line { fill: none; stroke: #00F7FF; stroke-width: 1.5; opacity: 0.15; }
+    .feedback-line { fill: none; stroke: #00F7FF; stroke-width: 1.5; opacity: 0.15; stroke-dasharray: 4; }
   </style>
 
-  <path id="path1" d="M 175 100 L 325 100" class="flow-line"/>
-  <path id="path2" d="M 475 100 L 625 100" class="flow-line"/>
-  <path id="path3" d="M 700 130 L 700 270" class="flow-line"/>
+  <path id="forward_path" d="M 175 100 L 325 100 M 475 100 L 625 100 M 700 130 L 700 270" class="flow-line" fill="none"/>
   
-  <path id="path4" d="M 625 300 L 175 300" class="feedback-line"/>
-  <path id="path5" d="M 100 270 L 100 130" class="feedback-line"/>
+  <path id="loop" d="M 175 100 H 325 M 475 100 H 625 M 700 130 V 270 M 625 300 H 175 M 100 270 V 130" fill="none" />
 
   <circle r="3" fill="#00F7FF">
-    <animateMotion dur="1.5s" repeatCount="indefinite" path="M 175 100 L 325 100" />
-  </circle>
-  <circle r="3" fill="#00F7FF">
-    <animateMotion dur="1.5s" begin="0.5s" repeatCount="indefinite" path="M 475 100 L 625 100" />
-  </circle>
-  <circle r="3" fill="#00F7FF">
-    <animateMotion dur="1s" begin="1s" repeatCount="indefinite" path="M 700 130 L 700 270" />
+    <animateMotion dur="4s" repeatCount="indefinite" path="M 175 100 H 325" />
+    <animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite" />
   </circle>
 
-  <circle r="2" fill="#9CA3AF">
-    <animateMotion dur="2.5s" repeatCount="indefinite" path="M 625 300 L 175 300" />
+  <circle r="3" fill="#00F7FF">
+    <animateMotion dur="4s" begin="1s" repeatCount="indefinite" path="M 475 100 H 625" />
+    <animate attributeName="opacity" values="0;1;1;0" dur="4s" begin="1s" repeatCount="indefinite" />
   </circle>
-  <circle r="2" fill="#9CA3AF">
-    <animateMotion dur="1.5s" begin="1s" repeatCount="indefinite" path="M 100 270 L 100 130" />
+
+  <circle r="3" fill="#00F7FF">
+    <animateMotion dur="4s" begin="2s" repeatCount="indefinite" path="M 700 130 V 270" />
+    <animate attributeName="opacity" values="0;1;1;0" dur="4s" begin="2s" repeatCount="indefinite" />
+  </circle>
+
+  <circle r="2.5" fill="#9CA3AF">
+    <animateMotion dur="4s" begin="3s" repeatCount="indefinite" path="M 625 300 H 175" />
+    <animate attributeName="opacity" values="0;1;1;0" dur="4s" begin="3s" repeatCount="indefinite" />
+  </circle>
+
+  <circle r="2.5" fill="#9CA3AF">
+    <animateMotion dur="4s" begin="3.8s" repeatCount="indefinite" path="M 100 270 V 130" />
+    <animate attributeName="opacity" values="0;1;1;0" dur="4s" begin="3.8s" repeatCount="indefinite" />
   </circle>
 
   <g transform="translate(25, 70)">
     <rect width="150" height="60" rx="4" class="box"/>
-    <text x="75" y="30" class="label">SENSORS</text>
-    <text x="75" y="48" class="sub-label">INPUT STREAM</text>
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite" />
+    <text x="75" y="28" class="label">SENSORS</text>
+    <text x="75" y="45" class="sub-label">INPUT STREAM</text>
   </g>
 
   <g transform="translate(325, 70)">
     <rect width="150" height="60" rx="4" class="box"/>
-    <text x="75" y="30" class="label">DECISION</text>
-    <text x="75" y="48" class="sub-label">CONTROL LOGIC</text>
+    <text x="75" y="28" class="label">DECISION</text>
+    <text x="75" y="45" class="sub-label">CONTROL LOGIC</text>
   </g>
 
   <g transform="translate(625, 70)">
-    <rect width="150" height="60" rx="4" class="box" stroke="#00F7FF" />
-    <text x="75" y="30" class="label">ACTUATORS</text>
-    <text x="75" y="48" class="sub-label">MOTORS/DRIVERS</text>
+    <rect width="150" height="60" rx="4" class="box"/>
+    <text x="75" y="28" class="label">ACTUATORS</text>
+    <text x="75" y="45" class="sub-label">MOTORS/DRIVERS</text>
   </g>
 
   <g transform="translate(625, 270)">
-    <rect width="150" height="60" rx="4" class="box" stroke="#9CA3AF" stroke-dasharray="2" />
-    <text x="75" y="30" class="label" style="fill:#9CA3AF">ENVIRONMENT</text>
-    <text x="75" y="48" class="sub-label">PHYSICAL FEEDBACK</text>
+    <rect width="150" height="60" rx="4" class="box" stroke-dasharray="4 2"/>
+    <text x="75" y="28" class="label">ENVIRONMENT</text>
+    <text x="75" y="45" class="sub-label">PHYSICAL RESPONSE</text>
   </g>
 
-  <text x="400" y="200" class="label" opacity="0.5" font-size="10">// CLOSED_LOOP_SYSTEM</text>
+  <g transform="translate(25, 270)">
+    <rect width="150" height="60" rx="4" class="box" stroke="#9CA3AF" stroke-dasharray="2"/>
+    <text x="75" y="28" class="label" style="fill:#9CA3AF">FEEDBACK</text>
+    <text x="75" y="45" class="sub-label">STATE CORRECTION</text>
+  </g>
+
+  <line x1="175" y1="100" x2="325" y2="100" class="flow-line" opacity="0.5"/>
+  <line x1="475" y1="100" x2="625" y2="100" class="flow-line" opacity="0.5"/>
+  <line x1="700" y1="130" x2="700" y2="270" class="flow-line" opacity="0.5"/>
+  <line x1="625" y1="300" x2="175" y2="300" class="feedback-line" opacity="0.5"/>
+  <line x1="100" y1="270" x2="100" y2="130" class="feedback-line" opacity="0.5"/>
+
+  <text x="400" y="200" class="label" opacity="0.4" font-size="11" letter-spacing="2">// CLOSED_LOOP_SYSTEM_ACTIVE</text>
 </svg>
