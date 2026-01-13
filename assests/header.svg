@@ -65,7 +65,7 @@
         font-family="monospace"
         font-size="22"
         fill="#00F7FF">
-    SYSTEM ONLINE
+    AURA ONLINE
     <animate attributeName="opacity" values="0;1;0.4;1" dur="2s" repeatCount="indefinite"/>
   </text>
 
@@ -73,7 +73,7 @@
         font-family="monospace"
         font-size="14"
         fill="#9CA3AF">
-    BUILD · BREAK · CONTROL · REPEAT
+    WATCH · DETECT · ACCOMPANY · REPEAT
   </text>
 
 </svg>
