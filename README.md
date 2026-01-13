@@ -37,16 +37,17 @@
 <h3 align="left" style="color:#00F7FF; font-family: monospace;">[+] CORE_LOGIC_INITIALIZATION.py</h3>
 
 ```python
-class AutonomousEngineer:
-    def __init__(self):
+def __init__(self):
         self.stack = ["ROS2", "Gemini API", "OpenCV", "Python"]
         self.focus = [
             "Agentic AI Orchestration",
             "Real-time Data Pipelines",
             "Reliability & Fallback Logic"
         ]
-        self.philosophy = "If a system can’t fail safely, it’s not finished."
+        
+        philosophy = "If a system can't fail safely, it's not finished."
 
     def execute_mission(self):
         # Build → Break → Analyze → Improve
         return "Transforming raw sensor data into actionable insights."
+```
