@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="400" height="220" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="220" fill="#0d1117" rx="8" stroke="#00F7FF" stroke-width="1" opacity="0.4"/>
+  <rect width="400" height="220" fill="#0d1117" rx="8" stroke="#00F7FF" stroke-width="1.5" />
+  
   <style>
-    .label { font-family: monospace; font-size: 12px; fill: #00F7FF; }
+    .label { font-family: 'Segoe UI', Roboto, monospace; font-size: 12px; fill: #00F7FF; font-weight: bold; }
     .val { font-family: monospace; font-size: 10px; fill: #9CA3AF; text-anchor: end; }
     .bar-bg { fill: #161b22; }
-    .bar-fill { fill: #00F7FF; }
+    .bar-fill { fill: #00F7FF; filter: drop-shadow(0 0 2px #00F7FF); }
   </style>
 
-  <text x="15" y="25" class="label" font-weight="bold">SYSTEM_METRICS</text>
+  <text x="20" y="30" class="label">SYSTEM_METRICS</text>
   
-  <text x="15" y="55" class="label">CPU_CORE_UTL</text>
-  <text x="385" y="55" class="val">88%</text>
-  <rect x="15" y="65" width="370" height="8" rx="4" class="bar-bg"/>
-  <rect x="15" y="65" width="300" height="8" rx="4" class="bar-fill">
-    <animate attributeName="width" values="280;340;310;360;290" dur="4s" repeatCount="indefinite" />
+  <text x="20" y="60" class="label" font-size="10" opacity="0.8">CPU_CORE_UTILIZATION</text>
+  <text x="380" y="60" class="val">88%</text>
+  <rect x="20" y="70" width="360" height="8" rx="4" class="bar-bg"/>
+  <rect x="20" y="70" width="316" height="8" rx="4" class="bar-fill">
+    <animate attributeName="width" values="280;340;310;350;290" dur="4s" repeatCount="indefinite" />
   </rect>
 
-  <text x="15" y="105" class="label">NEURAL_INF_LATENCY</text>
-  <text x="385" y="105" class="val">12ms</text>
-  <rect x="15" y="115" width="370" height="8" rx="4" class="bar-bg"/>
-  <rect x="15" y="115" width="120" height="8" rx="4" class="bar-fill">
-    <animate attributeName="width" values="100;140;110;130;105" dur="6s" repeatCount="indefinite" />
+  <text x="20" y="110" class="label" font-size="10" opacity="0.8">NEURAL_INF_LATENCY</text>
+  <text x="380" y="110" class="val">12ms</text>
+  <rect x="20" y="120" width="360" height="8" rx="4" class="bar-bg"/>
+  <rect x="20" y="120" width="120" height="8" rx="4" class="bar-fill">
+    <animate attributeName="width" values="100;160;110;140;105" dur="5s" repeatCount="indefinite" />
   </rect>
 
-  <polyline points="15,180 40,180 50,150 60,200 70,180 385,180" fill="none" stroke="#00F7FF" stroke-width="1.5" opacity="0.6">
-    <animate attributeName="points" dur="2s" repeatCount="indefinite"
-      values="15,180 40,180 50,150 60,200 70,180 385,180;
-              15,180 140,180 150,150 160,200 170,180 385,180;
-              15,180 240,180 250,150 260,200 270,180 385,180" />
+  <text x="20" y="160" class="label" font-size="10" opacity="0.8">DATA_BUS_TRAFFIC</text>
+  <polyline points="20,190 60,190 70,165 80,205 90,190 380,190" fill="none" stroke="#00F7FF" stroke-width="2" opacity="0.7">
+    <animate attributeName="points" dur="2.5s" repeatCount="indefinite"
+      values="20,190 60,190 70,165 80,205 90,190 380,190;
+              20,190 180,190 190,165 200,205 210,190 380,190;
+              20,190 300,190 310,165 320,205 330,190 380,190" />
   </polyline>
 </svg>
