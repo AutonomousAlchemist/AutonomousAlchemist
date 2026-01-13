@@ -47,7 +47,7 @@ If a system can’t fail safely, it’s not finished.
 
 <h2 style="color:#00F7FF; font-family: monospace;">SELF-DESCRIBING SYSTEM</h2>
 <p align="center">
-    <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/assets/tech_radar.svg" alt="Tech Skills Radar Scan" width="100%">
+    <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/tech_radar.svg" width="100%">
 </p>
 ```python
 class Engineer:
