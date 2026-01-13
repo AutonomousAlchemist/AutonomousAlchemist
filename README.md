@@ -20,7 +20,7 @@
     </td>
     <td width="40%" valign="top" style="border: none;">
       <p align="left" style="color:#00F7FF; font-family: monospace; margin-bottom: 10px;"><b>// REALTIME_DIAGNOSTICS</b></p>
-      <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/system_health.svg" width="100%" alt="System Health">
+      <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/system.svg" width="100%" alt="System Health">
       <br><br>
       <p align="left" style="color:#00F7FF; font-family: monospace; margin-bottom: 10px;"><b>// SKILL_RADAR_SCAN</b></p>
       <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/tech_radar.svg" width="100%" alt="Tech Radar">
