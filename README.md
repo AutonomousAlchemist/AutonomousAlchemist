@@ -36,7 +36,7 @@
 └────────────┘
 </pre>
 <p align="center">
-    <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/assets/system_flow.svg" alt="System Data Flow Animation" width="100%">
+    <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/system_flow.svg" alt="System Data Flow Animation" width="100%">
 </p>
 <p style="color:#9CA3AF; font-family: monospace;">
 I think in pipelines, states, and failure modes.  
@@ -49,6 +49,7 @@ If a system can’t fail safely, it’s not finished.
 <p align="center">
     <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/tech_radar.svg" width="100%">
 </p>
+
 ```python
 class Engineer:
     def __init__(self):
