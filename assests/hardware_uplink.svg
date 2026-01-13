@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#0d1117" rx="8" stroke="#00F7FF" stroke-width="1.5" />
+  
+  <style>
+    .header { font-family: monospace; font-size: 12px; fill: #00F7FF; font-weight: bold; }
+    .item-title { font-family: monospace; font-size: 10px; fill: #00F7FF; font-weight: bold; }
+    .item-sub { font-family: monospace; font-size: 9px; fill: #9CA3AF; }
+    .icon { fill: #00F7FF; opacity: 0.8; }
+    .pulse { fill: #27C93F; }
+  </style>
+
+  <text x="20" y="30" class="header">HARDWARE_UPLINK_STATUS</text>
+  <line x1="20" y1="40" x2="380" y2="40" stroke="#00F7FF" stroke-width="0.5" opacity="0.5" />
+
+  <g transform="translate(20, 60)">
+    <rect width="30" height="30" rx="4" fill="#161b22" stroke="#00F7FF" stroke-width="0.5" />
+    <circle cx="15" cy="15" r="4" class="pulse">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="40" y="12" class="item-title">HOST: RASPBERRY_PI_4B</text>
+    <text x="40" y="25" class="item-sub">OS: Ubuntu Linux / ALSA Drivers</text>
+  </g>
+
+  <g transform="translate(20, 110)">
+    <rect width="30" height="30" rx="4" fill="#161b22" stroke="#00F7FF" stroke-width="0.5" />
+    <path d="M10,15 L20,15 M15,10 L15,20" stroke="#00F7FF" stroke-width="1.5" />
+    <text x="40" y="12" class="item-title">COMM_BUS: BLE &amp; MJPEG</text>
+    <text x="40" y="25" class="item-sub">Protocol: 16-bit High-Throughput ETL</text>
+  </g>
+
+  <g transform="translate(20, 160)">
+    <rect width="30" height="30" rx="4" fill="#161b22" stroke="#00F7FF" stroke-width="0.5" />
+    <circle cx="15" cy="15" r="6" stroke="#00F7FF" fill="none" />
+    <text x="40" y="12" class="item-title">IO: TWILIO / gTTS / GPIO</text>
+    <text x="40" y="25" class="item-sub">Intervention: Autonomous Alert Pipeline</text>
+  </g>
+</svg>
