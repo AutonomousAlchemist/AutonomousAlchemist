@@ -1,27 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="300" height="200" rx="10" fill="#0d1117" stroke="#00F7FF" stroke-width="1" opacity="0.5"/>
+<svg width="400" height="220" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="220" fill="#0d1117" rx="8" stroke="#00F7FF" stroke-width="1" opacity="0.4"/>
+  <style>
+    .label { font-family: monospace; font-size: 12px; fill: #00F7FF; }
+    .val { font-family: monospace; font-size: 10px; fill: #9CA3AF; text-anchor: end; }
+    .bar-bg { fill: #161b22; }
+    .bar-fill { fill: #00F7FF; }
+  </style>
+
+  <text x="15" y="25" class="label" font-weight="bold">SYSTEM_METRICS</text>
   
-  <text x="15" y="30" fill="#00F7FF" font-family="monospace" font-size="12">SYSTEM_HEALTH</text>
-  
-  <text x="15" y="60" fill="#9CA3AF" font-family="monospace" font-size="10">CPU_LOAD</text>
-  <rect x="15" y="65" width="270" height="10" rx="5" fill="#161b22"/>
-  <rect x="15" y="65" width="0" height="10" rx="5" fill="#00F7FF">
-    <animate attributeName="width" values="100;220;180;250;200" dur="10s" repeatCount="indefinite" />
+  <text x="15" y="55" class="label">CPU_CORE_UTL</text>
+  <text x="385" y="55" class="val">88%</text>
+  <rect x="15" y="65" width="370" height="8" rx="4" class="bar-bg"/>
+  <rect x="15" y="65" width="300" height="8" rx="4" class="bar-fill">
+    <animate attributeName="width" values="280;340;310;360;290" dur="4s" repeatCount="indefinite" />
   </rect>
 
-  <text x="15" y="100" fill="#9CA3AF" font-family="monospace" font-size="10">MEM_UTIL</text>
-  <rect x="15" y="105" width="270" height="10" rx="5" fill="#161b22"/>
-  <rect x="15" y="105" width="0" height="10" rx="5" fill="#BD2E">
-    <animate attributeName="width" values="150;160;155;170;150" dur="8s" repeatCount="indefinite" />
+  <text x="15" y="105" class="label">NEURAL_INF_LATENCY</text>
+  <text x="385" y="105" class="val">12ms</text>
+  <rect x="15" y="115" width="370" height="8" rx="4" class="bar-bg"/>
+  <rect x="15" y="115" width="120" height="8" rx="4" class="bar-fill">
+    <animate attributeName="width" values="100;140;110;130;105" dur="6s" repeatCount="indefinite" />
   </rect>
 
-  <text x="15" y="140" fill="#9CA3AF" font-family="monospace" font-size="10">NET_TRAFFIC</text>
-  <polyline points="15,170 30,170 40,150 50,180 60,170 285,170" fill="none" stroke="#00F7FF" stroke-width="1">
-    <animate attributeName="points" 
-      values="15,170 30,170 40,150 50,180 60,170 285,170; 
-              15,170 130,170 140,150 150,180 160,170 285,170; 
-              15,170 230,170 240,150 250,180 260,170 285,170" 
-      dur="3s" repeatCount="indefinite" />
+  <polyline points="15,180 40,180 50,150 60,200 70,180 385,180" fill="none" stroke="#00F7FF" stroke-width="1.5" opacity="0.6">
+    <animate attributeName="points" dur="2s" repeatCount="indefinite"
+      values="15,180 40,180 50,150 60,200 70,180 385,180;
+              15,180 140,180 150,150 160,200 170,180 385,180;
+              15,180 240,180 250,150 260,200 270,180 385,180" />
   </polyline>
 </svg>
