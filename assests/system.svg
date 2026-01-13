@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" rx="10" fill="#0d1117" stroke="#00F7FF" stroke-width="1" opacity="0.5"/>
+  
+  <text x="15" y="30" fill="#00F7FF" font-family="monospace" font-size="12">SYSTEM_HEALTH</text>
+  
+  <text x="15" y="60" fill="#9CA3AF" font-family="monospace" font-size="10">CPU_LOAD</text>
+  <rect x="15" y="65" width="270" height="10" rx="5" fill="#161b22"/>
+  <rect x="15" y="65" width="0" height="10" rx="5" fill="#00F7FF">
+    <animate attributeName="width" values="100;220;180;250;200" dur="10s" repeatCount="indefinite" />
+  </rect>
+
+  <text x="15" y="100" fill="#9CA3AF" font-family="monospace" font-size="10">MEM_UTIL</text>
+  <rect x="15" y="105" width="270" height="10" rx="5" fill="#161b22"/>
+  <rect x="15" y="105" width="0" height="10" rx="5" fill="#BD2E">
+    <animate attributeName="width" values="150;160;155;170;150" dur="8s" repeatCount="indefinite" />
+  </rect>
+
+  <text x="15" y="140" fill="#9CA3AF" font-family="monospace" font-size="10">NET_TRAFFIC</text>
+  <polyline points="15,170 30,170 40,150 50,180 60,170 285,170" fill="none" stroke="#00F7FF" stroke-width="1">
+    <animate attributeName="points" 
+      values="15,170 30,170 40,150 50,180 60,170 285,170; 
+              15,170 130,170 140,150 150,180 160,170 285,170; 
+              15,170 230,170 240,150 250,180 260,170 285,170" 
+      dur="3s" repeatCount="indefinite" />
+  </polyline>
+</svg>
