@@ -32,6 +32,8 @@
 
 <h2 align="left" style="color:#00F7FF; font-family: monospace;">[+] CORE_LOGIC_INITIALIZATION</h2>
 
+</div>
+
 ```python
 class Engineer:
     def __init__(self):
