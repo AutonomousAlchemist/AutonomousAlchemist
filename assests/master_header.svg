@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="480" viewBox="0 0 1000 480" xmlns="http://www.w3.org/2000/svg">
+  <rect x="2" y="2" width="996" height="476" rx="10" fill="#0d1117" stroke="#00F7FF" stroke-width="2"/>
+  <path d="M 2 40 h 996" stroke="#00F7FF" stroke-width="1" opacity="0.3"/>
+  
+  <circle cx="25" cy="20" r="5" fill="#FF5F56"/>
+  <circle cx="45" cy="20" r="5" fill="#FFBD2E"/>
+  <circle cx="65" cy="20" r="5" fill="#27C93F"/>
+  <text x="90" y="25" fill="#9CA3AF" font-family="monospace" font-size="12">pavan_os --secure --root</text>
+
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00F7FF" stroke-width="0.4"/>
+    </pattern>
+  </defs>
+  <rect x="10" y="50" width="980" height="420" fill="url(#grid)" opacity="0.1"/>
+
+  <g transform="translate(0, 20)">
+    <circle cx="500" cy="230" r="26" stroke="#00F7FF" stroke-width="2" fill="none">
+      <animate attributeName="r" values="26;70" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <g>
+      <circle cx="500" cy="230" r="120" stroke="#00F7FF" stroke-width="1" fill="none" stroke-dasharray="10 5"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 500 230" to="360 500 230" dur="12s" repeatCount="indefinite"/>
+    </g>
+    <text x="500" y="235" text-anchor="middle" font-family="monospace" font-size="35" fill="#00F7FF" font-weight="bold" style="letter-spacing:8px;">PAVAN</text>
+  </g>
+
+  <rect x="2" y="40" width="996" height="2" fill="#00F7FF" opacity="0.1">
+    <animate attributeName="y" from="40" to="470" dur="4s" repeatCount="indefinite"/>
+  </rect>
+</svg>
