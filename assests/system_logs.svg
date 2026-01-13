@@ -1,18 +1,37 @@
-<svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="150" fill="#0d1117" rx="8" stroke="#9CA3AF" stroke-width="0.5" opacity="0.3"/>
+<svg width="400" height="220" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="220" fill="#0d1117" rx="8" stroke="#00F7FF" stroke-width="1.5" />
+  
   <style>
     .log { font-family: monospace; font-size: 10px; fill: #27C93F; }
-    @keyframes scroll { 0% { transform: translateY(0); } 100% { transform: translateY(-100px); } }
-    .scroll-text { animation: scroll 10s linear infinite; }
+    @keyframes scroll { 0% { transform: translateY(0); } 100% { transform: translateY(-120px); } }
+    .scroll-text { animation: scroll 15s linear infinite; }
+    .header { font-family: monospace; font-size: 12px; fill: #00F7FF; font-weight: bold; }
+    .scanline { fill: #00F7FF; opacity: 0.05; }
   </style>
-  <text x="10" y="20" font-family="monospace" font-size="11" fill="#00F7FF" font-weight="bold">[ SYSTEM_CERTIFICATIONS ]</text>
-  <g class="scroll-text" transform="translate(10, 45)">
-    <text y="0" class="log">> INITIALIZING... [OK]</text>
-    <text y="15" class="log">> INFOSYS: DATA_SCIENCE_CERT [LOADED]</text>
-    <text y="30" class="log">> COURSERA: CLOUD_APPS_NODEJS [LOADED]</text>
-    <text y="45" class="log">> TATA: VIRTUAL_SIMULATION_2025 [OK]</text>
-    <text y="60" class="log">> INFOSYS: AI_ML_TRAINING_2024 [OK]</text>
-    <text y="75" class="log">> COURSERA: WEB_DEV_STACK [OK]</text>
-    <text y="90" class="log">> SYSTEM STATUS: NOMINAL</text>
+  
+  <text x="20" y="30" class="header">SYSTEM_DIAGNOSTICS_LOG</text>
+  <line x1="20" y1="40" x2="380" y2="40" stroke="#00F7FF" stroke-width="0.5" opacity="0.5" />
+  
+  <defs>
+    <clipPath id="logClip">
+      <rect x="20" y="50" width="360" height="150" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#logClip)">
+    <g class="scroll-text" transform="translate(20, 70)">
+      <text y="0" class="log">> INITIALIZING AGENTIC_AI_CORE... [OK]</text>
+      <text y="20" class="log">> LOADING: GEMINI_VISION_ORCHESTRATOR [OK]</text>
+      <text y="40" class="log">> DATA_CLEANING: SMOTE &amp; Z-SCORE [APPLIED]</text>
+      <text y="60" class="log">> MODEL_ACCURACY: +15% OPTIMIZATION [VERIFIED]</text>
+      <text y="80" class="log">> INFOSYS_SPRINGBOARD: AI_ML_2024 [LOADED]</text>
+      <text y="100" class="log">> COURSERA: CLOUD_APPS_NODEJS [LOADED]</text>
+      <text y="120" class="log">> TATA: VIRTUAL_SIMULATION_2025 [OK]</text>
+      <text y="140" class="log">> STATUS: NOMINAL. READY FOR UPLINK.</text>
+    </g>
   </g>
+
+  <rect x="0" y="40" width="400" height="2" class="scanline">
+    <animate attributeName="y" from="40" to="210" dur="3s" repeatCount="indefinite" />
+  </rect>
 </svg>
