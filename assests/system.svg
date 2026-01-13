@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="400" height="220" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
   <rect width="400" height="220" fill="#0d1117" rx="8" stroke="#00F7FF" stroke-width="1.5" />
-  <text x="20" y="30" fill="#00F7FF" font-family="monospace" font-size="12" font-weight="bold">AGENT_TELEMETRY</text>
   
-  <text x="20" y="60" fill="#00F7FF" font-family="monospace" font-size="10">INFERENCE_LATENCY (Gemini)</text>
-  <rect x="20" y="70" width="360" height="8" rx="4" fill="#161b22"/>
-  <rect x="20" y="70" width="180" height="8" rx="4" fill="#00F7FF">
+  <style>
+    .label { font-family: monospace; font-size: 11px; fill: #00F7FF; font-weight: bold; }
+    .val { font-family: monospace; font-size: 10px; fill: #9CA3AF; text-anchor: end; }
+    .bar-bg { fill: #161b22; }
+    .bar-fill { fill: #00F7FF; filter: drop-shadow(0 0 2px #00F7FF); }
+  </style>
+
+  <text x="20" y="30" class="label" font-size="13">AGENT_TELEMETRY</text>
+  
+  <text x="20" y="60" class="label" opacity="0.8">INFERENCE_LATENCY (Gemini)</text>
+  <text x="380" y="60" class="val">12ms</text>
+  <rect x="20" y="70" width="360" height="8" rx="4" class="bar-bg"/>
+  <rect x="20" y="70" width="180" height="8" rx="4" class="bar-fill">
     <animate attributeName="width" values="180;210;190;240;185" dur="3s" repeatCount="indefinite" />
   </rect>
 
-  <text x="20" y="110" fill="#00F7FF" font-family="monospace" font-size="10">PIPELINE_THROUGHPUT (BLE)</text>
-  <rect x="20" y="120" width="360" height="8" rx="4" fill="#161b22"/>
-  <rect x="20" y="120" width="300" height="8" rx="4" fill="#00F7FF">
+  <text x="20" y="110" class="label" opacity="0.8">PIPELINE_THROUGHPUT (BLE)</text>
+  <text x="380" y="110" class="val">HIGH</text>
+  <rect x="20" y="120" width="360" height="8" rx="4" class="bar-bg"/>
+  <rect x="20" y="120" width="300" height="8" rx="4" class="bar-fill">
     <animate attributeName="width" values="290;320;300;310;295" dur="5s" repeatCount="indefinite" />
   </rect>
 
-  <text x="20" y="160" fill="#00F7FF" font-family="monospace" font-size="10">MODEL_ACCURACY (Validation)</text>
-  <text x="350" y="160" fill="#9CA3AF" font-family="monospace" font-size="10">98.2%</text>
+  <text x="20" y="160" class="label" opacity="0.8">MODEL_ACCURACY (Validation)</text>
+  <text x="380" y="160" class="val">98.2%</text>
+  <rect x="20" y="170" width="360" height="8" rx="4" class="bar-bg"/>
+  <rect x="20" y="170" width="353.5" height="8" rx="4" class="bar-fill">
+    <animate attributeName="opacity" values="1;0.7;1" dur="4s" repeatCount="indefinite" />
+  </rect>
 </svg>
