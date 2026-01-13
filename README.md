@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/YourUsername/YourRepoName/main/assets/header.svg" width="100%">
+  <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/header.svg" width="100%">
 </p>
 
 ---
