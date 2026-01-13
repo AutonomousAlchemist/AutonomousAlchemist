@@ -1,58 +1,39 @@
-<h1 align="center" style="color:#00F7FF; font-family: monospace;">
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/header.svg" width="100%">
+
+<h1 align="center" style="color:#00F7FF; font-family: monospace; margin-top: -10px;">
   PAVAN KUMAR S
 </h1>
 
-<p align="center" style="color:#9CA3AF; font-family: monospace;">
-  Robotics • Embedded Systems • Python 
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/header.svg" width="100%">
+<p align="center" style="color:#9CA3AF; font-family: monospace; letter-spacing: 2px;">
+  ROBOTICS • EMBEDDED SYSTEMS • PYTHON 
 </p>
 
 ---
 
-<h2 style="color:#00F7FF; font-family: monospace;">SYSTEM VIEW</h2>
-
-<pre style="background-color:#0d1117;color:#00f7ff;padding:16px;border-radius:8px;">
-┌────────────┐
-│    SENSOR    │  Camera / Distance / State
-└─────┬──────┘
-      ↓
-┌────────────┐
-│ PERCEPTION │  Signal → Meaning
-└─────┬──────┘
-      ↓
-┌────────────┐
-│  DECISION  │  State Machines / Control Logic
-└─────┬──────┘
-      ↓
-┌────────────┐
-│ ACTUATION  │  Motors / Alerts / Response
-└─────┬──────┘
-      ↓
-┌────────────┐
-│ MONITORING │  Failure Detection / Recovery
-└────────────┘
-</pre>
-
-<p align="center">
-    <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/system_flow.svg" alt="System Data Flow Animation" width="100%" lenght="80%">
-</p>
-
-<p style="color:#9CA3AF; font-family: monospace;">
-I think in pipelines, states, and failure modes.  
-If a system can’t fail safely, it’s not finished.
-</p>
+<table border="0" style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <td width="60%" valign="top" style="border: none;">
+      <p align="left" style="color:#00F7FF; font-family: monospace; margin-bottom: 10px;"><b>// NEURAL_SYSTEM_FLOW</b></p>
+      <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/system_flow.svg" width="100%" alt="System Flow">
+      <p align="left" style="color:#9CA3AF; font-family: monospace; font-size: 13px;">
+        <i>Closed-loop control visualization integrating sensors, decision-making, and physical actuators.</i>
+      </p>
+    </td>
+    <td width="40%" valign="top" style="border: none;">
+      <p align="left" style="color:#00F7FF; font-family: monospace; margin-bottom: 10px;"><b>// REALTIME_DIAGNOSTICS</b></p>
+      <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/system_health.svg" width="100%" alt="System Health">
+      <br><br>
+      <p align="left" style="color:#00F7FF; font-family: monospace; margin-bottom: 10px;"><b>// SKILL_RADAR_SCAN</b></p>
+      <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/tech_radar.svg" width="100%" alt="Tech Radar">
+    </td>
+  </tr>
+</table>
 
 ---
 
-
-<p align="center">
-    <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/tech_radar.svg" width="100%">
-</p>
-
-<h2 style="color:#00F7FF; font-family: monospace;">SELF-DESCRIBING SYSTEM</h2>
+<h2 align="left" style="color:#00F7FF; font-family: monospace;">[+] SELF-DESCRIBING_SYSTEM.py</h2>
 
 ```python
 class Engineer:
@@ -67,5 +48,3 @@ class Engineer:
 
     def philosophy(self):
         return "If it works only once, it doesn't work."
-
-
