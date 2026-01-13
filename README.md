@@ -1,10 +1,7 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/header.svg" width="100%">
+<img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/master_header.svg" width="100%">
 
-<h1 align="center" style="color:#00F7FF; font-family: monospace; margin-top: -10px;">
-  PAVAN KUMAR S
-</h1>
 
 <p align="center" style="color:#9CA3AF; font-family: monospace; letter-spacing: 2px;">
   ROBOTICS • EMBEDDED SYSTEMS • PYTHON 
