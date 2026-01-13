@@ -45,7 +45,7 @@ def __init__(self):
             "Reliability & Fallback Logic"
         ]
         
-        philosophy = "If a system can't fail safely, it's not finished."
+        self.philosophy = "If a system can't fail safely, it's not finished."
 
     def execute_mission(self):
         # Build → Break → Analyze → Improve
