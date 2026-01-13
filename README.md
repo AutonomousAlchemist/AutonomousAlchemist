@@ -4,7 +4,7 @@
 
 
 <p align="center" style="color:#9CA3AF; font-family: monospace; letter-spacing: 1px;">
-  ROBOTICS & AI ENGINEER | AGENTIC AI SPECIALIST
+  ROBOTICS & AI ENGINEER | BANGALORE INSTITUTE OF TECHNOLOGY (RAI '26)
 </p>
 
 ---
