@@ -37,7 +37,7 @@
 </pre>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/system_flow.svg" alt="System Data Flow Animation" width="100%">
+    <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/system_flow.svg" alt="System Data Flow Animation" width="100%" lenght="80%">
 </p>
 
 <p style="color:#9CA3AF; font-family: monospace;">
