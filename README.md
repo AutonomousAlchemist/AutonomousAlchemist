@@ -14,12 +14,15 @@
     <td width="55%" valign="top" style="border: none;">
       <p align="left" style="color:#00F7FF; font-family: monospace; margin-bottom: 10px;"><b>// AGENTIC_ARCHITECTURE_STREAM</b></p>
       <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/system_flow.svg" width="100%">
+      <br><br>
        <p align="left" style="color:#00F7FF; font-family: monospace; margin-bottom: 10px;"><b>// DATA_PIPELINE_METRICS</b></p>
       <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/system.svg" width="100%"> 
     </td>
     <td width="45%" valign="top" style="border: none;">
       <p align="left" style="color:#00F7FF; font-family: monospace; margin-bottom: 5px;"><b>// LIVE_BOOT_LOGS</b></p>
   <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/system_logs.svg" width="100%">
+      <p align="left" style="color:#00F7FF; font-family: monospace;"><b>// HARDWARE_UPLINK</b></p>
+      <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/hardware_uplink.svg" width="100%">
       <br><br>
       <p align="left" style="color:#00F7FF; font-family: monospace; margin-bottom: 10px;"><b>// TECH_RADAR</b></p>
       <img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/tech_radar.svg" width="100%">
