@@ -30,7 +30,7 @@
 
 ---
 
-<h2 align="left" style="color:#00F7FF; font-family: monospace;">[+] SELF-DESCRIBING_SYSTEM.py</h2>
+<h2 align="left" style="color:#00F7FF; font-family: monospace;">[+] CORE_LOGIC_INITIALIZATION</h2>
 
 ```python
 class Engineer:
