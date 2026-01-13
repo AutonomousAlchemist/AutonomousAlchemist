@@ -35,15 +35,16 @@
 </div>
 
 ```python
-class Engineer:
+class PavanEngineer:
     def __init__(self):
-        self.domain = ["Robotics", "Embedded Systems"]
-        self.focus = [
-            "System architecture",
-            "Control logic",
-            "Reliability under failure"
+        self.domain = ["Robotics", "Agentic AI"] # 
+        self.hardware_stack = ["Raspberry Pi", "BLE", "Linux"] # 
+        self.core_focus = [
+            "LLM Orchestration (Gemini API)", # 
+            "Real-time Data Pipelines", # [cite: 28]
+            "State Machine Logic" # 
         ]
-        self.method = "Build → Break → Analyze → Improve"
-
+        
     def philosophy(self):
-        return "If it works only once, it doesn't work."
+        # "If it works only once, it doesn't work."
+        return "Reliability under failure is the true metric of success." #
