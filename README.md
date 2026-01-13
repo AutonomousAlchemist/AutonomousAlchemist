@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assets/header.svg" width="100%">
+<img src="https://raw.githubusercontent.com/AutonomousAlchemist/AutonomousAlchemist/refs/heads/main/assests/master_header.svg" width="100%">
 
 <h1 align="center" style="color:#00F7FF; font-family: monospace; margin-top: -10px;">
   PAVAN KUMAR S
